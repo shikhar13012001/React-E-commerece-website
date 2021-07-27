@@ -22,7 +22,9 @@ unsubscribeFromAuth=null
          this.setState({currentUser:{
            id:snap.id,
            ...snap.data()
-         }})
+         }},()=>{
+          console.log(this.state);
+         })
         });
         
       }
