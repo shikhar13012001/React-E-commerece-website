@@ -8,6 +8,8 @@ import  SignInAndSignUpPage from './Pages/sign-in-and-sign-up/sign-in-and-sign-u
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import {connect} from'react-redux';
 import {SetCurrentuser} from './redux/user/user.actions'
+import { createStructuredSelector } from 'reselect'
+
 class App extends React.Component {
   
 unsubscribeFromAuth=null
